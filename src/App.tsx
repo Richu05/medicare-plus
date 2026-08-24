@@ -1,11 +1,14 @@
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Stats from "./components/Stats";
 
 function App() {
   return (
     <div>
       <Navbar clinicName = "MediCare+" />
 
-      <h1>Welcome to MediCare+</h1>
+      <Hero />
+      <Stats />
     </div>
   );
 }
