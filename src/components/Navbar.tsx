@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   clinicName: string;
@@ -62,9 +63,12 @@ function Navbar({ clinicName }: NavbarProps) {
             Login
           </button>
 
-          <button className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 hover:shadow-md">
-            Get Started
-          </button>
+          <Link
+            to="/register-doctor"
+            className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 hover:shadow-md"
+          >
+            Register Doctor
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -95,9 +99,12 @@ function Navbar({ clinicName }: NavbarProps) {
               Login
             </button>
 
-            <button className="mt-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700">
-              Get Started
-            </button>
+            <Link
+              to="/register-doctor"
+              className="mt-2 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 block text-center"
+            >
+              Register Doctor
+            </Link>
           </div>
         </div>
       )}
