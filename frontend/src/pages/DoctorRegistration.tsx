@@ -535,7 +535,7 @@ function DoctorRegistration() {
    */
   if (submitted) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-50 via-white to-teal-50 px-4">
+      <div className="flex min-h-screen items-center justify-center bg-linear-to-br from-blue-50 via-white to-teal-50 px-4">
         <div className="w-full max-w-md rounded-3xl bg-white p-10 text-center shadow-xl">
 
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100 text-4xl">
@@ -565,7 +565,7 @@ function DoctorRegistration() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50 px-4 py-10">
+    <div className="min-h-screen bg-linear-to-br from-blue-50 via-white to-teal-50 px-4 py-10">
 
       <div className="mx-auto max-w-4xl">
 
